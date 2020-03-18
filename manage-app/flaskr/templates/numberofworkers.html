@@ -1,0 +1,29 @@
+{% extends "base.html" %}
+
+{% block head %}
+    <title>Number of Workers</title>
+    <link rel="stylesheet" href="static/css/home.css">
+    <link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/1.10.19/css/jquery.dataTables.css">
+{% endblock%}
+
+{% block content %}
+    <div class="card">
+        <div class="card-header">
+            Number of Workers
+        </div>
+    <div class="card-body">
+          <div class="row" id="charts3"></div>
+    </div>
+    </div>
+
+{% endblock %}
+
+{% block footer %}
+<script src="static/js/Numberofworkers.js"></script>
+<script src="https://code.jquery.com/jquery-3.1.1.min.js"></script>
+<script type="text/javascript" charset="utf8" src="https://cdn.datatables.net/1.10.19/js/jquery.dataTables.js"></script>
+<!--<script src="https://code.highcharts.com/highcharts.js"></script>-->
+<script src="https://code.highcharts.com/stock/highstock.js"></script>
+<script src="https://code.highcharts.com/stock/modules/exporting.js"></script>
+<script src="https://code.highcharts.com/stock/modules/export-data.js"></script>
+{% endblock%}

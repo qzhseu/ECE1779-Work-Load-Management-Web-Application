@@ -1,0 +1,12 @@
+.ajax-loading {
+    width: 12px;
+    height: 12px;
+    position: relative;
+    display: inline-block;
+    overflow: hidden;
+    margin: 0;
+}
+
+.right {
+    float: right;
+}

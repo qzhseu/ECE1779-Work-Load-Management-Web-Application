@@ -1,0 +1,32 @@
+{% extends "base.html" %}
+
+{% block head %}
+<title>Sign in</title>
+<link rel="stylesheet" href="static/css/login.css">
+{% endblock %}
+
+{% block content %}
+<div class="container">
+        <div class="card card-container">
+            {% with messages = get_flashed_messages() %}
+              {% if messages %}
+                {% for message in messages %}
+                    <div class="alert alert-danger alert-dismissible" role="alert">
+                      <button type="button" class="close" data-dismiss="alert" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                      {{ message }}
+                  </div>
+                {% endfor %}
+              {% endif %}
+            {% endwith %}
+            <img id="profile-img" class="profile-img-card" src="static/img/avatar_2x.png" />
+            <p id="profile-name" class="profile-name-card"></p>
+            <form class="form-signin" action="{{ url_for('login') }}" method="post">
+                {{ form.hidden_tag() }}
+                {{ form.username(class="form-control", placeholder="Username", min="5") }}
+                {{ form.password(class="form-control", placeholder="Password") }}
+                {{ form.remember_me() }} {{ form.remember_me.label }}
+                {{ form.submit(class="btn btn-lg btn-success btn-block btn-signin") }}
+            </form><!-- /form -->
+        </div><!-- /card-container -->
+    </div><!-- /container -->
+{% endblock %}

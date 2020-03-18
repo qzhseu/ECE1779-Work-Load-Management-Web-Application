@@ -1,0 +1,90 @@
+{% extends "base.html" %}
+
+{% block head %}
+<title>Configure</title>
+{% endblock%}
+
+{% block content %}
+<div class="card">
+    <div class="card-header">Auto scaling configure</div>
+    <div class="card-body">
+        {% with messages = get_flashed_messages(with_categories=true) %}
+          {% if messages %}
+            {% for category, message in messages %}
+              {% if category == 'success' %}
+              <div class="alert alert-success alert-dismissible" role="alert">
+                  <button type="button" class="close" data-dismiss="alert" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                  {{ message }}
+              </div>
+              {% else %}
+                <div class="alert alert-danger alert-dismissible" role="alert">
+                    <button type="button" class="close" data-dismiss="alert" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                    {{ message }}
+                </div>
+              {% endif %}
+            {% endfor %}
+          {% endif %}
+        {% endwith %}
+        <form action="{{url_for('configure_auto_scaling')}}" method="post">
+            {{ form.hidden_tag() }}
+            <div class="form-group row">
+                <label for="input1" class="col-sm-3 col-form-label">Cpu threshold to grow</label>
+                <div class="col-sm-6">
+                    {{ form.cpu_grow(class="form-control", id="input1", value=values.cpu_grow | int)}}
+                </div>
+                <div class="col-sm-2">
+                    <button class="btn btn-large btn-success" id="modify-btn1" >Modify</button>
+                </div>
+            </div>
+            <div class="form-group row">
+                <label for="input2" class="col-sm-3 col-form-label">Cpu threshold to shrink</label>
+                <div class="col-sm-6">
+                    {{ form.cpu_shrink(class="form-control", id="input2", value=values.cpu_shrink) }}
+                </div>
+                <div class="col-sm-2">
+                    <button class="btn btn-large btn-success" id="modify-btn2">Modify</button>
+                </div>
+            </div>
+            <div class="form-group row">
+                <label for="input3" class="col-sm-3 col-form-label">Ratio of expand</label>
+                <div class="col-sm-6">
+                    {{ form.ratio_expand(class="form-control", id="input3", value = values.ratio_expand) }}
+                </div>
+                <div class="col-sm-2">
+                    <button class="btn btn-large btn-success" id="modify-btn3">Modify</button>
+                </div>
+            </div>
+            <div class="form-group row">
+                <label for="input4" class="col-sm-3 col-form-label">Ratio of shrink</label>
+                <div class="col-sm-6">
+                    {{ form.ratio_shrink(class="form-control", id="input4", value = values.ratio_shrink) }}
+                </div>
+                <div class="col-sm-2">
+                    <button class="btn btn-large btn-success" id="modify-btn4">Modify</button>
+                </div>
+            </div>
+            {{ form.submit(class="btn btn-primary") }}
+        </form>
+    </div>
+</div>
+<br><br>
+<div class="card">
+    <div class="card-header alert alert-danger">Clear all application data</div>
+    <div class="card-body">
+        <div class="row" id="msg"></div>
+        <button class="btn btn-danger" id="clear_btn">Clear</button>
+    </div>
+</div>
+<br><br>
+<div class="card">
+   <div class="card-header alert alert-warning">Stop Manager App</div>
+    <div class="card-body">
+        <div class="row" id="msg_stop"></div>
+        <button class="btn btn-warning" id="stop_btn">Stop</button>
+    </div>
+</div>
+{% endblock %}
+
+{% block footer %}
+<script src="static/js/configure.js"></script>
+{% endblock%}
