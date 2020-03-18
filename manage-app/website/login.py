@@ -1,6 +1,6 @@
 from flask import render_template, request, flash, redirect, url_for, session
-from flaskr import app
-from flaskr import forms
+from website import app
+from website import forms
 import traceback
 
 @app.route('/login', methods=['GET', 'POST'])

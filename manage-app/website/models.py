@@ -1,4 +1,4 @@
-from flaskr import db
+from website import db
 
 class AutoScalingConfig(db.Model):
     __tablename__ = 'autoscalingconfig'

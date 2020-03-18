@@ -1,14 +1,14 @@
 from flask import render_template, url_for, session, redirect, request, flash
-from flaskr import app
-from flaskr import db
-from flaskr.models import AutoScalingConfig, RequestPerMinute, User, Image
-from flaskr import forms
+from website import app
+from website import db
+from website.models import AutoScalingConfig, RequestPerMinute, User, Image
+from website import forms
 from datetime import datetime
 import traceback
 import json
 from sqlalchemy import desc
-from flaskr.aws import aws
-from flaskr.aws.aws import AwsClient
+from website.aws import aws
+from website.aws.aws import AwsClient
 import logging
 
 awscli = AwsClient()

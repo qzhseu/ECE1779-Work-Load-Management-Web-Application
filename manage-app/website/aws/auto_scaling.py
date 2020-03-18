@@ -4,9 +4,9 @@ import schedule
 import time
 from datetime import datetime, timedelta
 from pytz import timezone
-from flaskr import app
-from flaskr import db
-from flaskr.models import AutoScalingConfig, RequestPerMinute
+from website import app
+from website import db
+from website.models import AutoScalingConfig, RequestPerMinute
 from sqlalchemy import desc
 import aws
 import json

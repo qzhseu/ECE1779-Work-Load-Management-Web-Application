@@ -1,5 +1,5 @@
 from flask import render_template
-from flaskr import app
+from website import app
 
 @app.errorhandler(404)
 def not_found_error(error):

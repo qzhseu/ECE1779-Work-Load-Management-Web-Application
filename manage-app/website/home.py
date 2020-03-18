@@ -1,7 +1,7 @@
 from flask import render_template, url_for, session, redirect, request
-from flaskr import app
-from flaskr.aws.aws import AwsClient
-from flaskr.models import RequestPerMinute
+from website import app
+from website.aws.aws import AwsClient
+from website.models import RequestPerMinute
 from datetime import datetime, timedelta
 from pytz import timezone
 import collections
