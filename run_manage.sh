@@ -1,6 +1,6 @@
 #!/bin/bash
 manage_app_dir='manage-app'
-auto_scaling_dir='flaskr/aws'
+auto_scaling_dir='website/aws'
 
 source $manage_app_dir/myvenv/bin/activate
 cd $manage_app_dir && python run.py &> manage_app.log &
