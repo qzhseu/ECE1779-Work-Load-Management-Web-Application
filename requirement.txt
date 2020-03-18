@@ -1,0 +1,64 @@
+User App:
+flask
+flask-login
+flask-wtf
+wheel
+flask_sqlalchemy
+mysql-connector-python
+mysqlclient
+opencv-python-headless
+validators
+passlib
+gunicorn
+Boto3
+Pytz
+
+Manager App:
+Boto3
+schedule
+Was
+
+
+
+Upload file to EC2
+scp -i /Users/qzh/.ssh/ece1779.pem /Users/qzh/project1779/1779a1_2/a1.zip ubuntu@ec2-3-235-9-52.compute-1.amazonaws.com:~/Desktop
+
+Connect ec2 instance
+ssh -i /Users/qzh/.ssh/ece1779.pem  ubuntu@35.170.68.240 -L 5901:localhost:5901
+
+<persist>true</persist>
+#!/bin/bash -ex
+echo 'test' > test.txt
+
+
+Change:
+1. User.py f
+2.run.py Userpath->os.getcwd()
+3.objectdetaction.py yploPath=Userpath->os.getcwd()
+4.objectdetaction.py delete from run import User_path
+
+
+
+User data
+Content-Type: multipart/mixed; boundary="//"
+MIME-Version: 1.0
+
+--//
+Content-Type: text/cloud-config; charset="us-ascii"
+MIME-Version: 1.0
+Content-Transfer-Encoding: 7bit
+Content-Disposition: attachment; filename="cloud-config.txt"
+
+#cloud-config
+cloud_final_modules:
+- [scripts-user, always]
+
+--//
+Content-Type: text/x-shellscript; charset="us-ascii"
+MIME-Version: 1.0
+Content-Transfer-Encoding: 7bit
+Content-Disposition: attachment; filename="userdata.txt"
+
+#!/bin/bash
+./start.sh
+--//
