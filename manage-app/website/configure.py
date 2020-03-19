@@ -7,21 +7,24 @@ from datetime import datetime
 import traceback
 import json
 from sqlalchemy import desc
-from website.aws import aws
 from website.aws.aws import AwsClient
 import logging
 
-awscli = AwsClient()
+client = AwsClient()
+#configuration for auto scaler
 @app.route('/configure')
 def configure():
-    user = session['user'] if 'user' in session else None
-    if not user:
+    if 'user' in session:
+        user = session['user']
+    else:
+        user = None
+    if user is None:
         return redirect(url_for('login'))
     else:
         try:
             form = forms.ConfigForm()
-            values = configure_auto_scaling_info()
-            if not values:
+            values = AutoScalingConfig.query.order_by(desc(AutoScalingConfig.timestamp)).first()
+            if values is None:
                 values = {
                     'cpu_grow': -1,
                     'cpu_shrink': -1,
@@ -36,12 +39,11 @@ def configure():
 
 @app.route('/configure_auto_scaling', methods=['GET', 'POST'])
 def configure_auto_scaling():
-    """
-    request keys: cpu_grow, cpu_shrink, ratio_expand, ratio_shrink
-    :return: msg: str
-    """
-    user = session['user'] if 'user' in session else None
-    if not user:
+    if 'user' in session:
+        user = session['user']
+    else:
+        user = None
+    if user is None:
         return redirect(url_for('login'))
     else:
         try:
@@ -84,12 +86,15 @@ def configure_auto_scaling():
 @app.route('/stop_manager',methods=['GET','POST'])
 def stop_manager():
     current_time = datetime.now()
-    user = session['user'] if 'user' in session else None
-    if not user:
+    if 'user' in session:
+        user = session['user']
+    else:
+        user = None
+    if user is None:
         return redirect(url_for('login'))
     else:
         try:
-            response=awscli.stop_manager_and_allworkers()
+            response=client.stop_all_instances()
             logging.warning('{} grow workers: {}'.format(current_time, response))
             return json.dumps({
                 'flag': True,
@@ -105,8 +110,11 @@ def stop_manager():
 
 @app.route('/clear_data', methods=['GET', 'POST'])
 def clear_data():
-    user = session['user'] if 'user' in session else None
-    if not user:
+    if 'user' in session:
+        user = session['user']
+    else:
+        user = None
+    if user is None:
         return redirect(url_for('login'))
     else:
         try:
@@ -118,8 +126,7 @@ def clear_data():
             db.session.commit()
             Image.query.delete()
             db.session.commit()
-            awscli = aws.AwsClient()
-            awscli.clear_s3()
+            client.clear_s3()
             return json.dumps({
                 'flag': True,
                 'msg': 'Success'
@@ -131,8 +138,3 @@ def clear_data():
                 'flag': False,
                 'msg': 'Fail to clear the data'
             })
-
-# latest configure info
-def configure_auto_scaling_info():
-    return AutoScalingConfig.query.order_by(desc(AutoScalingConfig.timestamp)).first()
-

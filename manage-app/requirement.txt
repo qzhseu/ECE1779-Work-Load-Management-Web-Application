@@ -1,0 +1,30 @@
+User App:
+flask
+flask-login
+flask-wtf
+wheel
+flask_sqlalchemy
+mysql-connector-python
+mysqlclient
+pymysql
+opencv-python-headless
+validators
+passlib
+gunicorn
+Boto3
+
+Manager App:
+flask
+flask-wtf
+flask-sqlalchemy
+mysql-connector-python
+mysqlclient
+pymysql
+pytz
+Boto3
+
+
+
+
+
+

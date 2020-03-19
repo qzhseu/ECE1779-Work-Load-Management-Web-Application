@@ -23,7 +23,6 @@ def login():
         return render_template('login.html', form=form)
 
     except Exception as e:
-        print(e)
         traceback.print_tb(e.__traceback__)
         return render_template('error.html', msg='something goes wrong~')
 
