@@ -12,7 +12,8 @@ import aws
 import json
 
 client = aws.AwsClient()
-
+# calculate average cpu utilization of all valid instances within target group
+# over the past 2 mins (120s)
 def average_cpu_utils():
     valid_instances = client.get_valid_instances()
     l = len(valid_instances)
@@ -20,7 +21,7 @@ def average_cpu_utils():
         return -1
     else:
         end = datetime.now(timezone(app.config['ZONE']))
-        start = end - timedelta(seconds=600)
+        start = end - timedelta(seconds=120)
         cpu_utils_sum = 0
         for i in range(l):
             response = client.get_cpu_utils(valid_instances[i], start, end)
@@ -34,7 +35,7 @@ def auto_scaling():
     cpu_utils = average_cpu_utils()
     db.session.commit()
     config = AutoScalingConfig.query.order_by(desc(AutoScalingConfig.timestamp)).first()
-
+    # if there is not valid instance or if auto scaling configuration is not setup, return
     if cpu_utils == -1 or config is None:
         return
 
@@ -42,9 +43,3 @@ def auto_scaling():
         client.grow_worker_by_ratio(config.ratio_expand)
     elif cpu_utils < config.cpu_shrink:
         client.shrink_worker_by_ratio(config.ratio_shrink)
-
-# clear database request records more than 2 hours old
-def clear_requests():
-    start_time = datetime.now(timezone(app.config['ZONE'])) - timedelta(seconds=7260)
-    RequestPerMinute.query.filter(RequestPerMinute.timestamp < start_time).delete()
-    db.session.commit()

@@ -1,7 +1,7 @@
 from flask import render_template, url_for, session, redirect, request, flash
 from website import app
 from website import db
-from website.models import AutoScalingConfig, RequestPerMinute, User, Image
+from website.models import AutoScalingConfig, RequestPerMinute, User, Photo
 from website import forms
 from datetime import datetime
 import traceback
@@ -124,7 +124,7 @@ def clear_data():
             db.session.commit()
             User.query.delete()
             db.session.commit()
-            Image.query.delete()
+            Photo.query.delete()
             db.session.commit()
             client.clear_s3()
             return json.dumps({
