@@ -8,16 +8,16 @@
 
 {% block content %}
 <div class="card">
-    <div class="card-header">
+    <div class="card-header alert alert-success">
         Worker Pool
     </div>
     <div class="card-body">
         <a href="http://ece1779elb-application-1848708795.us-east-1.elb.amazonaws.com/" target="_blank">Link to user-app:http://ece1779elb-application-1848708795.us-east-1.elb.amazonaws.com</a>
         <br><br>
         <div id="msg"></div>
-        <button class="btn btn-primary" id="show_btn">Show</button>
         <button class="btn btn-success" id="add_btn">Add</button>
         <button class="btn btn-danger" id="delete_btn">Delete</button>
+        <button class="btn btn-primary" id="show_btn">Show</button>
         <button class="btn btn-secondary right" id="refresh_btn">Refresh</button>
         <br><br>
         <table id="workers_table" class="display">

@@ -9,7 +9,11 @@ class ConfigForm(FlaskForm):
     submit = SubmitField('Submit')
 
 class LoginForm(FlaskForm):
-    username = StringField('Username', validators=[validators.DataRequired()])
-    password = PasswordField('Password', validators=[validators.DataRequired()])
-    remember_me = BooleanField('Remember Me')
-    submit = SubmitField('Sign In')
+    username = StringField('Username', [
+        validators.DataRequired(message="Plese input your username"),
+        validators.Length(min=1, max=25),
+    ])
+    password = PasswordField('Password', [
+        validators.DataRequired(),
+        validators.Length(min=6, max=255),
+    ])

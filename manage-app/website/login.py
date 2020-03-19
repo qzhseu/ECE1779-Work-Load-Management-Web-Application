@@ -1,30 +1,25 @@
-from flask import render_template, request, flash, redirect, url_for, session
 from website import app
-from website import forms
-import traceback
+from flask import render_template, flash, redirect, url_for, session, logging, request, send_from_directory
+from flask_login import current_user, login_user, login_required, logout_user
+from website.forms import LoginForm
 
-@app.route('/login', methods=['GET', 'POST'])
+@app.route('/login',methods=['GET','POST'])
 def login():
-    try:
-        if 'user' in session:
-            logout()
-
-        form = forms.LoginForm()
-        if form.validate_on_submit():
-            username = form.username.data
-            password = form.password.data
-
+    if 'user' in session:
+        logout()
+    form = LoginForm()
+    if form.validate_on_submit:
+        #Get formfield
+        username=form.username.data
+        password=form.password.data
+        if username and password is not None:
             if username != 'admin' or password != 'admin':
-                flash("Username or Password does not exist")
+                flash("Your password is worng, please try again", 'danger')
             else:
-                session['user']='admin'
+                session['user'] = 'admin'
                 return redirect(url_for('home'))
 
-        return render_template('login.html', form=form)
-
-    except Exception as e:
-        traceback.print_tb(e.__traceback__)
-        return render_template('error.html', msg='something goes wrong~')
+    return render_template('login.html', form=form)
 
 @app.route('/logout')
 def logout():
