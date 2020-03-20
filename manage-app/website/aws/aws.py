@@ -203,8 +203,8 @@ class AwsClient:
             responses.append(self.grow_worker_by_one())
         return responses
 
-    # if tag is true, smallest number of worker is 1
-    # if tag is false, all workers can be suspended
+    # if tag is true, worker will be stopped
+    # if tag is false, worker will be terminated
     def shrink_worker_by_one(self,tag=True):
         if(tag):
             min_number=1
@@ -238,7 +238,18 @@ class AwsClient:
                 if stop_instance_response and 'ResponseMetadata' in stop_instance_response and \
                         'HTTPStatusCode' in stop_instance_response['ResponseMetadata']:
                     stop_instance_status = stop_instance_response['ResponseMetadata']['HTTPStatusCode']
-                if int(stop_instance_status) != 200:
+                if int(stop_instance_status) == 200:
+                    if (tag==False):
+                        #after successful stopping, try to terminate instance when tag is false
+                        terminate_instance_status = -1
+                        terminate_instance_response = self.ec2.stop_instances(InstanceIds=[unregister_instance_id])
+                        if terminate_instance_response and 'ResponseMetadata' in terminate_instance_response and \
+                                'HTTPStatusCode' in terminate_instance_response['ResponseMetadata']:
+                            terminate_instance_status = stop_instance_response['ResponseMetadata']['HTTPStatusCode']
+                            if int(terminate_instance_status) != 200:
+                                flag = False
+                                msg = "Unable to terminate the stopped instance"
+                else:
                     flag = False
                     msg = "Unable to stop the unregistered instance"
             else:
@@ -297,6 +308,7 @@ class AwsClient:
         else:
             shrink_targets_num = len(target_instances_id)
             for i in range(shrink_targets_num):
+                # try to terminate instance when tag for shrink_worker_by_one() is false
                 response_list.append(self.shrink_worker_by_one(False))
             response_list.append(self.stop_manager())
             return [True, "Success", response_list]
