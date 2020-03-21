@@ -12,7 +12,7 @@ $(document).ready(function() {
         clear_data()
     });
     $('#stop_btn').on("click", function() {
-        stop_manager()
+        stop_manager_terminate_intances()
     });
 });
 
@@ -61,10 +61,10 @@ function clear_data() {
     });
 }
 
-function stop_manager() {
+function stop_manager_terminate_intances() {
     $.ajax({
         type: 'POST',
-        url: '/stop_manager',
+        url: '/stop_manager_terminate_intances',
         data: '',
         contentType: false,
         cache: false,

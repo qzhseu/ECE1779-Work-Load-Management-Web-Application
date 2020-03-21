@@ -22,7 +22,6 @@ def get_time_span(latest):
 
 def average_cpu_utils():
     valid_instances_id = awscli.get_valid_instances()
-    print(valid_instances_id)
     l = len(valid_instances_id)
     logging.warning('valid_instances_id:{}'.format(valid_instances_id))
     start_time, end_time = get_time_span(120)
@@ -40,7 +39,6 @@ def auto_scaling():
     logging.warning('-----------auto_scaling------------')
     current_time = datetime.now()
     cpu_utils = average_cpu_utils()
-    print(cpu_utils)
     db.session.commit()
     config = AutoScalingConfig.query.order_by(desc(AutoScalingConfig.timestamp)).first()
     logging.warning(cpu_utils)
@@ -77,7 +75,7 @@ def clear_requests():
 
 if __name__ == '__main__':
     # start auto-scaling
-    schedule.every(30).seconds.do(auto_scaling)
+    schedule.every(60).seconds.do(auto_scaling)
     schedule.every(60).minutes.do(clear_requests)
     while True:
         schedule.run_pending()

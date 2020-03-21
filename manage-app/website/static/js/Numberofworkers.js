@@ -38,7 +38,7 @@ function shownumberofworkers() {
                 },
 
                 title: {
-                    text: 'Instances CPU Utilities in Worker Pool'
+                    text: 'Number of Workers'
                 },
 
                 series: newdata
