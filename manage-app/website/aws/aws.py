@@ -18,7 +18,7 @@ class AwsClient:
         self.user_app_tag = 'Userapp'
         self.manager_app_tag = 'Managerapp'
         self.image_id = 'ami-046417e3f34836369'
-        self.instance_type ='t2.micro'
+        self.instance_type ='t2.small'
         self.keypair_name ='ece1779'
         self.security_group=['ece1779a2']
         self.tag_specification=[{
@@ -151,16 +151,18 @@ class AwsClient:
 
     def grow_worker_by_one(self):
         idle_instances = self.get_idle_instances()
+
         workers_count=len(self.get_tag_instances())
         #grow worker by first trying to restart idle instance
-        if idle_instances is not None:
+        if len(idle_instances) is not 0:
+            print(len(idle_instances))
             new_instance_id = idle_instances[0]
             self.ec2.start_instances(
                 InstanceIds=[new_instance_id]
             )
         #if no idle instance available and instance number is smaller than 11, start new instance
         else:
-            if workers_count < 11:
+            if workers_count < 8:
                 response = self.create_ec2_instance()
                 new_instance_id = response['InstanceId']
             else:

@@ -1,3 +1,3 @@
 #!/bin/bash
 
-python gen.py http://ece1779-a2-load-balancer-1781096346.us-east-1.elb.amazonaws.com:5000/api/upload liu liu 1 ./photos/ 100
+python3.7 gen.py http://ece1779elb-application-1848708795.us-east-1.elb.amazonaws.com/api/upload test2 123456 0.1  ./photos/  180

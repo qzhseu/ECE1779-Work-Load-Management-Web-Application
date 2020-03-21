@@ -10,36 +10,75 @@ from website.models import AutoScalingConfig, RequestPerMinute
 from sqlalchemy import desc
 import aws
 import json
+import logging
 
-client = aws.AwsClient()
-# calculate average cpu utilization of all valid instances within target group
-# over the past 2 mins (120s)
+awscli = aws.AwsClient()
+
+# get start_time and end_time of latest 1 minute
+def get_time_span(latest):
+    end_time = datetime.now(timezone(app.config['ZONE']))
+    start_time = end_time - timedelta(seconds=latest)
+    return start_time, end_time
+
 def average_cpu_utils():
-    valid_instances = client.get_valid_instances()
-    l = len(valid_instances)
-    if l == 0:
-        return -1
-    else:
-        end = datetime.now(timezone(app.config['ZONE']))
-        start = end - timedelta(seconds=120)
-        cpu_utils_sum = 0
-        for i in range(l):
-            response = client.get_cpu_utils(valid_instances[i], start, end)
-            response = json.loads(response)
-            if response and response[0]:
-                cpu_utils_sum += response[0][1]
-        return cpu_utils_sum / l
+    valid_instances_id = awscli.get_valid_instances()
+    print(valid_instances_id)
+    l = len(valid_instances_id)
+    logging.warning('valid_instances_id:{}'.format(valid_instances_id))
+    start_time, end_time = get_time_span(120)
+    cpu_sum = 0
+    for i in range(l):
+        response = awscli.get_cpu_utils(valid_instances_id[i], start_time, end_time)
+        response = json.loads(response)
+        if response and response[0]:
+            cpu_sum += response[0][1]
+
+    return cpu_sum / l if l else -1
+
 
 def auto_scaling():
+    logging.warning('-----------auto_scaling------------')
     current_time = datetime.now()
     cpu_utils = average_cpu_utils()
+    print(cpu_utils)
     db.session.commit()
     config = AutoScalingConfig.query.order_by(desc(AutoScalingConfig.timestamp)).first()
-    # if there is not valid instance or if auto scaling configuration is not setup, return
-    if cpu_utils == -1 or config is None:
+    logging.warning(cpu_utils)
+
+    # if there is no valid instances, then do nothing.
+    if cpu_utils == -1:
+        logging.warning('{} no workers in the pool'.format(current_time))
         return
 
+    if not config:
+        logging.warning('{} no auto scaling configuration'.format(current_time))
+        return
+
+    #cpu_grow, cpu_shrink, ratio_expand, ratio_shrink
     if cpu_utils > config.cpu_grow:
-        client.grow_worker_by_ratio(config.ratio_expand)
+        response = awscli.grow_worker_by_ratio(config.ratio_expand)
+        logging.warning('{} grow workers: {}'.format(current_time, response))
+        #time.sleep(60)
     elif cpu_utils < config.cpu_shrink:
-        client.shrink_worker_by_ratio(config.ratio_shrink)
+        response = awscli.shrink_worker_by_ratio(config.ratio_shrink)
+        logging.warning('{} shrink workers: {}'.format(current_time, response))
+        #time.sleep(60)
+    else:
+        logging.warning('{} nothing change'.format(current_time))
+
+
+def clear_requests():
+    # clear the records 2 hours ago
+    start_time, end_time = get_time_span(7260)
+    RequestPerMinute.query.filter(RequestPerMinute.timestamp < start_time).delete()
+    db.session.commit()
+    logging.warning('{} delete records two hours go'.format(end_time))
+
+
+if __name__ == '__main__':
+    # start auto-scaling
+    schedule.every(30).seconds.do(auto_scaling)
+    schedule.every(60).minutes.do(clear_requests)
+    while True:
+        schedule.run_pending()
+        time.sleep(1)
