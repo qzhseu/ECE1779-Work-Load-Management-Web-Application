@@ -5,10 +5,10 @@
 
 alias deactivate 'test $?_OLD_VIRTUAL_PATH != 0 && setenv PATH "$_OLD_VIRTUAL_PATH" && unset _OLD_VIRTUAL_PATH; rehash; test $?_OLD_VIRTUAL_PROMPT != 0 && set prompt="$_OLD_VIRTUAL_PROMPT" && unset _OLD_VIRTUAL_PROMPT; unsetenv VIRTUAL_ENV; test "\!:*" != "nondestructive" && unalias deactivate'
 
-# Unset irrelevant variables.
+# Unset irrelavent variables.
 deactivate nondestructive
 
-setenv VIRTUAL_ENV "/Users/qzh/Documents/UT/1779 Cloud computing/ece1779-a2-master/manage-app/myvenv"
+setenv VIRTUAL_ENV "/home/ubuntu/Desktop/ECE1779-a2-Manager-APP/manage-app/myvenv"
 
 set _OLD_VIRTUAL_PATH="$PATH"
 setenv PATH "$VIRTUAL_ENV/bin:$PATH"

@@ -1,4 +1,4 @@
-#!/Users/qzh/Documents/UT/1779 Cloud computing/ece1779-a2-master/manage-app/myvenv/bin/python3
+#!/home/ubuntu/Desktop/ECE1779-a2-Manager-APP/manage-app/myvenv/bin/python3
 
 # $Id: rst2latex.py 5905 2009-04-16 12:04:49Z milde $
 # Author: David Goodger <goodger@python.org>

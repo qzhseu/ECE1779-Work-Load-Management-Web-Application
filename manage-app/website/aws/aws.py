@@ -17,7 +17,7 @@ class AwsClient:
         self.cloudwatch = boto3.client('cloudwatch')
         self.user_app_tag = 'Userapp'
         self.manager_app_tag = 'Managerapp'
-        self.image_id = 'ami-046417e3f34836369'
+        self.image_id = 'ami-01147a2ee75b5ed5a'
         self.instance_type ='t2.small'
         self.keypair_name ='ece1779'
         self.security_group=['ece1779a2']
@@ -162,7 +162,7 @@ class AwsClient:
             )
         #if no idle instance available and instance number is smaller than 11, start new instance
         else:
-            if workers_count < 8:
+            if workers_count < 10:
                 response = self.create_ec2_instance()
                 new_instance_id = response['InstanceId']
             else:
@@ -205,8 +205,8 @@ class AwsClient:
             responses.append(self.grow_worker_by_one())
         return responses
 
-    # if tag is true, smallest number of worker is 1
-    # if tag is false, all workers can be suspended
+    # if tag is true, worker will be stopped
+    # if tag is false, worker will be terminated
     def shrink_worker_by_one(self,tag=True):
         if(tag):
             min_number=1
@@ -240,7 +240,18 @@ class AwsClient:
                 if stop_instance_response and 'ResponseMetadata' in stop_instance_response and \
                         'HTTPStatusCode' in stop_instance_response['ResponseMetadata']:
                     stop_instance_status = stop_instance_response['ResponseMetadata']['HTTPStatusCode']
-                if int(stop_instance_status) != 200:
+                if int(stop_instance_status) == 200:
+                    if (tag==False):
+                        #after successful stopping, try to terminate instance when tag is false
+                        terminate_instance_status = -1
+                        terminate_instance_response = self.ec2.terminate_instances(InstanceIds=[unregister_instance_id])
+                        if terminate_instance_response and 'ResponseMetadata' in terminate_instance_response and \
+                                'HTTPStatusCode' in terminate_instance_response['ResponseMetadata']:
+                            terminate_instance_status = stop_instance_response['ResponseMetadata']['HTTPStatusCode']
+                            if int(terminate_instance_status) != 200:
+                                flag = False
+                                msg = "Unable to terminate the stopped instance"
+                else:
                     flag = False
                     msg = "Unable to stop the unregistered instance"
             else:
@@ -292,15 +303,21 @@ class AwsClient:
     # stop all instances including all users and manager
     def stop_all_instances(self):
         target_instances_id = self.get_valid_instances()
+        tag_instances = self.get_tag_instances()
         response_list = []
+        for item in tag_instances:
+            if item['State']=='stopped':
+                self.ec2.terminate_instances(InstanceIds=[item['Id']])
         if len(target_instances_id)<1:
             response_list.append(self.stop_manager())
             return [True, "Success", response_list]
         else:
             shrink_targets_num = len(target_instances_id)
             for i in range(shrink_targets_num):
+                # try to terminate instance when tag for shrink_worker_by_one() is false
                 response_list.append(self.shrink_worker_by_one(False))
             response_list.append(self.stop_manager())
+
             return [True, "Success", response_list]
 
     def get_cpu_utils(self, instance_id, start_time, end_time):

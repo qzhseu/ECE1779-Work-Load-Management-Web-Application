@@ -1,4 +1,4 @@
-#!/Users/qzh/Documents/UT/1779 Cloud computing/ece1779-a2-master/manage-app/myvenv/bin/python3
+#!/home/ubuntu/Desktop/ECE1779-a2-Manager-APP/manage-app/myvenv/bin/python3
 
 # $Id: rst2xetex.py 7847 2015-03-17 17:30:47Z milde $
 # Author: Guenter Milde

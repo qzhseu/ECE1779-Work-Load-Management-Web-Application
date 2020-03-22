@@ -1,4 +1,4 @@
-#!/Users/qzh/Documents/UT/1779 Cloud computing/ece1779-a2-master/manage-app/myvenv/bin/python3
+#!/home/ubuntu/Desktop/ECE1779-a2-Manager-APP/manage-app/myvenv/bin/python3
 
 # $Id: rst2odt_prepstyles.py 5839 2009-01-07 19:09:28Z dkuhlman $
 # Author: Dave Kuhlman <dkuhlman@rexx.com>

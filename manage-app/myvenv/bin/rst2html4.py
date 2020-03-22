@@ -1,4 +1,4 @@
-#!/Users/qzh/Documents/UT/1779 Cloud computing/ece1779-a2-master/manage-app/myvenv/bin/python3
+#!/home/ubuntu/Desktop/ECE1779-a2-Manager-APP/manage-app/myvenv/bin/python3
 
 # $Id: rst2html4.py 7994 2016-12-10 17:41:45Z milde $
 # Author: David Goodger <goodger@python.org>

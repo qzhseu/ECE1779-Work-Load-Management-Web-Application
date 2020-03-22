@@ -3,10 +3,11 @@ from website import app
 from website.aws.aws import AwsClient
 from website.models import RequestPerMinute
 from datetime import datetime, timedelta
-from pytz import timezone
+from pytz import timezone,utc
 import collections
 import traceback
 import json
+import logging
 
 client = AwsClient()
 
@@ -21,8 +22,8 @@ def home():
         return redirect(url_for('login'))
     else:
         try:
-            healthy_workers=client.get_healthy_instances()
-            if len(healthy_workers)<1:
+            valid_workers=client.get_valid_instances()
+            if len(valid_workers)<1:
                 client.grow_worker_by_one()
             return render_template('home.html')
         except Exception as e:
@@ -125,7 +126,11 @@ def get_requests_per_minute(instance, start_time, end_time):
         .filter(RequestPerMinute.timestamp >= start_time) \
         .with_entities(RequestPerMinute.timestamp).all()
 
-    timestamps = list(map(lambda x: int(round(datetime.timestamp(x[0]))), datetimes))
+    localtime=timezone(app.config['ZONE'])
+
+
+    timestamps = list(map(lambda x: int(round(datetime.timestamp\
+                (localtime.localize(x[0],is_dst=None).astimezone(utc)))), datetimes))
 
     requests_record = []
     timestamp_counter = collections.Counter(timestamps)
@@ -133,10 +138,12 @@ def get_requests_per_minute(instance, start_time, end_time):
     start_timestamp = int(round(datetime.timestamp(start_time)))
     end_timestamp = int(round(datetime.timestamp(end_time)))
 
+
     for i in range(start_timestamp, end_timestamp, 60):
         count = 0
         for j in range(i, i + 60):
             count += timestamp_counter[j]
-
+            #logging.warning('inloop:{}'.format(timestamp_counter[j]))
         requests_record.append([i*1000, count])
+        #logging.warning('outloop:{}'.format(count))
     return json.dumps(requests_record)

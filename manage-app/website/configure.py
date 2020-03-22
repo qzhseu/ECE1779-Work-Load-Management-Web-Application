@@ -83,8 +83,8 @@ def configure_auto_scaling():
             traceback.print_tb(e.__traceback__)
             return render_template('error.html', msg='something goes wrong~')
 
-@app.route('/stop_manager',methods=['GET','POST'])
-def stop_manager():
+@app.route('/stop_manager_terminate_intances',methods=['GET','POST'])
+def stop_manager_terminate_intances():
     current_time = datetime.now()
     if 'user' in session:
         user = session['user']
@@ -95,7 +95,7 @@ def stop_manager():
     else:
         try:
             response=client.stop_all_instances()
-            logging.warning('{} grow workers: {}'.format(current_time, response))
+            logging.warning('{} terminate all workers: {}'.format(current_time, response))
             return json.dumps({
                 'flag': True,
                 'msg': 'Success'

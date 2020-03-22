@@ -1,458 +1,130 @@
 WARNING:root:-----------auto_scaling------------
-WARNING:root:valid_instances_id:['i-02d0217f544d223b6']
-WARNING:root:0.333333333333335
-WARNING:root:2020-03-20 20:59:01.617111 shrink workers: [True, 'Success', []]
-WARNING:root:-----------auto_scaling------------
-WARNING:root:valid_instances_id:['i-02d0217f544d223b6']
-WARNING:root:0.333333333333335
-WARNING:root:2020-03-20 20:59:35.561046 shrink workers: [True, 'Success', []]
-WARNING:root:-----------auto_scaling------------
-WARNING:root:valid_instances_id:['i-02d0217f544d223b6']
-WARNING:root:0.163934426229508
-WARNING:root:2020-03-20 21:00:07.142686 shrink workers: [True, 'Success', []]
-WARNING:root:-----------auto_scaling------------
-WARNING:root:valid_instances_id:['i-02d0217f544d223b6']
-WARNING:root:0.163934426229508
-WARNING:root:2020-03-20 21:00:38.751707 shrink workers: [True, 'Success', []]
-WARNING:root:-----------auto_scaling------------
-WARNING:root:valid_instances_id:['i-02d0217f544d223b6']
-WARNING:root:0.847457627118644
-WARNING:root:2020-03-20 21:01:10.386205 shrink workers: [True, 'Success', []]
-WARNING:root:-----------auto_scaling------------
-WARNING:root:valid_instances_id:['i-02d0217f544d223b6']
-WARNING:root:0.847457627118644
-WARNING:root:2020-03-20 21:01:41.927920 shrink workers: [True, 'Success', []]
-WARNING:root:-----------auto_scaling------------
-WARNING:root:valid_instances_id:['i-02d0217f544d223b6']
-WARNING:root:31.1666666666667
-WARNING:root:2020-03-20 21:02:13.551525 nothing change
-WARNING:root:-----------auto_scaling------------
-WARNING:root:valid_instances_id:['i-02d0217f544d223b6']
-WARNING:root:31.1666666666667
-WARNING:root:2020-03-20 21:02:44.993762 nothing change
-WARNING:root:-----------auto_scaling------------
-WARNING:root:valid_instances_id:['i-02d0217f544d223b6']
-WARNING:root:27.6666666666667
-WARNING:root:2020-03-20 21:03:16.454493 nothing change
-WARNING:root:-----------auto_scaling------------
-WARNING:root:valid_instances_id:['i-02d0217f544d223b6']
-WARNING:root:27.6666666666667
-WARNING:root:2020-03-20 21:03:47.928159 nothing change
-WARNING:root:-----------auto_scaling------------
-WARNING:root:valid_instances_id:['i-02d0217f544d223b6']
-WARNING:root:28.5245901639344
-WARNING:root:2020-03-20 21:04:19.435896 nothing change
-WARNING:root:-----------auto_scaling------------
-WARNING:root:valid_instances_id:['i-02d0217f544d223b6']
-WARNING:root:28.5245901639344
-WARNING:root:2020-03-20 21:04:50.885847 nothing change
-WARNING:root:-----------auto_scaling------------
-WARNING:root:valid_instances_id:['i-02d0217f544d223b6']
-WARNING:root:24.4067796610169
-WARNING:root:2020-03-20 21:05:22.389745 nothing change
-WARNING:root:-----------auto_scaling------------
-WARNING:root:valid_instances_id:['i-02d0217f544d223b6']
-WARNING:root:24.4067796610169
-WARNING:root:2020-03-20 21:05:53.875435 nothing change
-WARNING:root:-----------auto_scaling------------
-WARNING:root:valid_instances_id:['i-02d0217f544d223b6']
-WARNING:root:0.169491525423743
-WARNING:root:2020-03-20 21:06:25.311995 shrink workers: [True, 'Success', []]
-WARNING:root:-----------auto_scaling------------
-WARNING:root:valid_instances_id:['i-02d0217f544d223b6']
-WARNING:root:0.169491525423743
-WARNING:root:2020-03-20 21:06:56.977828 shrink workers: [True, 'Success', []]
-WARNING:root:-----------auto_scaling------------
-WARNING:root:valid_instances_id:['i-02d0217f544d223b6']
-WARNING:root:0.98360655737704
-WARNING:root:2020-03-20 21:07:28.597650 shrink workers: [True, 'Success', []]
-WARNING:root:-----------auto_scaling------------
-WARNING:root:valid_instances_id:['i-02d0217f544d223b6']
-WARNING:root:45.1666666666667
-WARNING:root:2020-03-20 21:08:00.225121 grow workers: [200]
-WARNING:root:-----------auto_scaling------------
-WARNING:root:valid_instances_id:['i-0876ed106060edf71', 'i-02d0217f544d223b6']
-WARNING:root:29.344262295082
-WARNING:root:2020-03-20 21:10:59.490460 nothing change
-WARNING:root:-----------auto_scaling------------
-WARNING:root:valid_instances_id:['i-0876ed106060edf71', 'i-02d0217f544d223b6']
-WARNING:root:29.344262295082
-WARNING:root:2020-03-20 21:11:31.090827 nothing change
-WARNING:root:-----------auto_scaling------------
-WARNING:root:valid_instances_id:['i-0876ed106060edf71', 'i-02d0217f544d223b6']
-WARNING:root:29.5
-WARNING:root:2020-03-20 21:12:02.810713 nothing change
-WARNING:root:-----------auto_scaling------------
-WARNING:root:valid_instances_id:['i-0876ed106060edf71', 'i-02d0217f544d223b6']
-WARNING:root:29.5
-WARNING:root:2020-03-20 21:12:36.153367 nothing change
-WARNING:root:-----------auto_scalinWARNING:root:-----------auto_scaling------------
-WARNING:root:valid_instances_id:['i-02d0217f544d223b6']
-WARNING:root:13.2203389830508
-WARNING:root:2020-03WARNING:root:-----------auto_scalinWARNING:root:-----------auto_scaling------------
-WARNING:root:valid_instances_id:['i-02d0217f544d223b6']
-WARNING:root:3.83333333333335
-WARNING:root:2020-03-20 21:14:34.184086 shrink workers: [True, 'Success', []]
-WARNING:root:-----------auto_scaling------------
-WARNING:root:valid_instances_id:['i-02d0217f544d223b6']
-WARNING:root:53.5
-WARNING:root:2020-03-20 21:15:35.887704 grow workers: [200, 200]
-ing------------
-WARNING:root:valid_instances_id:['i-02d0217f544d223b6']
-WARNING:root:3.83333333333335
-WARNING:root:2020-03-20 21:14:42.429322 shrink workers: [True, 'Success', []]
-WARNING:root:-----------auto_scaling------------
-WARNING:root:valid_instances_id:['i-02d0217f544d223b6']
-WARNING:root:53.5
-WARNING:root:2020-03-20 21:15:14.016851 grow workers: [200]
-WARNING:root:-----------auto_scaling------------
-WARNING:root:valid_instances_id:['i-02d0217f544d223b6', 'i-0e214a957c2e7ebf2', 'i-0f3c7049642eb39c4']
-WARNING:root:20.508474576271166
-WARNING:root:2020-03-20 21:16:07.944039 nothing change
-WARNING:root:-----------auto_scaling------------
-ances_id:['i-02d0217f544d223b6', 'i-0e214a957c2e7ebf2', 'i-0f3c7049642eb39c4']
-WARNING:root:20.508474576271166
-WARNING:root:2020-03-20 21:16:07.488333 nothing change
-WARNING:root:-----------auto_scaling------------
-WARNING:root:valid_instances_id:['i-02d0217f544d223b6', 'i-0e214a957c2e7ebf2', 'i-0726cc0b6fa8729c5', 'i-0f3c7049642eb39c4']
--03-20 21:16:07.846754 nothing change
-:-----------auto_scaling------------
-WARNING:root:valid_instances_id:['i-02d0217f544d223b6', 'i-0e214a957c2e7ebf2', 'i-0f3c7049642eb39c4']
-WARNING:root:20.508474576271166
-WARNING:root:2020-03-20 21:16:07.175602 nothing change
-WARNING:root:-----------auto_scaling------------
-WARNING:root:valid_instances_id:['i-02d0217f544d223b6', 'i-0e214a957c2e7ebf2', 'i-0726cc0b6fa8729c5', 'i-0f3c7049642eb39c4']
-20 21:02:10.896816 shrink workers: [True, 'Success', []]
-WARNING:root:-----------auto_scaling------------
-WARNING:root:valid_instances_id:['i-02d0217f544d223b6']
-WARNING:root:0.333333333333332
-WARNING:root:2020-03-20 21:03:12.604644 shrink workers: [True, 'Success', []]
-WARNING:root:-----------auto_scaling------------
-WARNING:root:valid_instances_id:['i-02d0217f544d223b6']
-WARNING:root:0.333333333333332
-WARNING:root:2020-03-20 21:04:14.319000 shrink workers: [True, 'Success', []]
-WARNING:root:-----------auto_scaling------------
-WARNING:root:valid_instances_id:['i-02d0217f544d223b6']
-WARNING:root:0.333333333333332
-WARNING:root:2020-03-20 21:05:16.024811 shrink workers: [True, 'Success', []]
-WARNING:root:-----------auto_scaling------------
-WARNING:root:valid_instances_id:['i-02d0217f544d223b6']
-WARNING:root:0.333333333333332
-WARNING:root:2020-03-20 21:06:17.702818 shrink workers: [True, 'Success', []]
-WARNING:root:-----------auto_scaling------------
-WARNING:root:valid_instances_id:['i-02d0217f544d223b6']
-WARNING:root:0.333333333333335
-WARNING:root:2020-03-20 21:07:19.677274 shrink workers: [True, 'Success', []]
-WARNING:root:-----------auto_scaling------------
-WARNING:root:valid_instances_id:['i-02d0217f544d223b6']
-WARNING:root:0.163934426229508
-WARNING:root:2020-03-20 21:08:21.374753 shrink workers: [True, 'Success', []]
-WARNING:root:-----------auto_scaling------------
-WARNING:root:valid_instances_id:['i-02d0217f544d223b6']
-WARNING:root:0.847457627118644
-WARNING:root:2020-03-20 21:09:23.136559 shrink workers: [True, 'Success', []]
-WARNING:root:-----------auto_scaling------------
-WARNING:root:valid_instances_id:['i-02d0217f544d223b6']
-WARNING:root:31.1666666666667
-WARNING:root:2020-03-20 21:10:24.929896 nothing change
-WARNING:root:-----------auto_scaling------------
-WARNING:root:valid_instances_id:['i-0876ed106060edf71', 'i-02d0217f544d223b6']
-WARNING:root:13.83333333333335
-WARNING:root:2020-03-20 21:11:26.518386 nothing change
-WARNING:root:-----------auto_scaling------------
-WARNING:root:valid_instances_id:['i-0876ed106060edf71', 'i-02d0217f544d223b6']
-WARNING:root:14.2622950819672
-WARNING:root:2020-03-20 21:12:28.194212 nothing change
-WARNING:root:-----------auto_scaling------------
-WARNING:root:valid_instances_id:['i-02d0217f544d223b6']
-WARNING:root:24.4067796610169
-WARNING:root:2020-03-20 21:13:29.936301 nothing change
-WARNING:root:-----------auto_scaling------------
-WARNING:root:valid_instances_id:['i-02d0217f544d223b6']
-WARNING:root:0.169491525423743
-WARNING:root:2020-03-20 21:14:31.427700 shrink workers: [True, 'Success', []]
-WARNING:root:-----------auto_scaling------------
-WARNING:root:valid_instances_id:['i-02d0217f544d223b6']
-WARNING:root:0.98360655737704
-WARNING:root:2020-03-20 21:15:33.130033 shrink workers: [True, 'Success', []]
-WARNING:root:-----------auto_scaling------------
-WARNING:root:valid_instances_id:['i-02d0217f544d223b6', 'i-0e214a957c2e7ebf2', 'i-0726cc0b6fa8729c5', 'i-0f3c7049642eb39c4']
-WARNING:root:11.291666666666675
-WARNING:root:2020-03-20 21:16:34.892222 nothing change
-: [True, 'Success', []]
-WARNING:root:-----------auto_scaling------------
-WARNING:root:valid_instances_id:['i-02d0217f544d223b6']
-WARNING:root:0.163934426229508
-WARNING:root:2020-03-20 21:00:30.207906 shrink workers: [True, 'Success', []]
-WARNING:root:-----------auto_scaling------------
-WARNING:root:valid_instances_id:['i-02d0217f544d223b6']
-WARNING:root:0.163934426229508
-WARNING:root:2020-03-20 21:00:41.731903 shrink workers: [True, 'Success', []]
-WARNING:root:-----------auto_scaling------------
-WARNING:root:valid_instances_id:['i-02d0217f544d223b6']
-WARNING:root:0.163934426229508
-WARNING:root:2020-03-20 21:00:53.346245 shrink workers: [True, 'Success', []]
-WARNING:root:-----------auto_scaling------------
-WARNING:root:valid_instances_id:['i-02d0217f544d223b6']
-WARNING:root:0.847457627118644
-WARNING:root:2020-03-20 21:01:04.919607 shrink workers: [True, 'Success', []]
-WARNING:root:-----------auto_scaling------------
-WARNING:root:valid_instances_id:['i-02d0217f544d223b6']
-WARNING:root:0.847457627118644
-WARNING:root:2020-03-20 21:01:16.471807 shrink workers: [True, 'Success', []]
-WARNING:root:-----------auto_scaling------------
-WARNING:root:valid_instances_id:['i-02d0217f544d223b6']
-WARNING:root:0.847457627118644
-WARNING:root:2020-03-20 21:01:28.060025 shrink workers: [True, 'Success', []]
-WARNING:root:-----------auto_scaling------------
-WARNING:root:valid_instances_id:['i-02d0217f544d223b6']
-WARNING:root:0.847457627118644
-WARNING:root:2020-03-20 21:01:39.634353 shrink workers: [True, 'Success', []]
-WARNING:root:-----------auto_scaling------------
-WARNING:root:valid_instances_id:['i-02d0217f544d223b6']
-WARNING:root:0.847457627118644
-WARNING:root:2020-03-20 21:01:51.208421 shrink workers: [True, 'Success', []]
-WARNING:root:-----------auto_scaling------------
-WARNING:root:valid_instances_id:['i-02d0217f544d223b6']
-WARNING:root:31.1666666666667
-WARNING:root:2020-03-20 21:02:02.939405 nothing change
-WARNING:root:-----------auto_scaling------------
-WARNING:root:valid_instances_id:['i-02d0217f544d223b6']
-WARNING:root:31.1666666666667
-WARNING:root:2020-03-20 21:02:14.476210 nothing change
-WARNING:root:-----------auto_scaling------------
-WARNING:root:valid_instances_id:['i-02d0217f544d223b6']
-WARNING:root:31.1666666666667
-WARNING:root:2020-03-20 21:02:25.894063 nothing change
-WARNING:root:-----------auto_scaling------------
-WARNING:root:valid_instances_id:['i-02d0217f544d223b6']
-WARNING:root:31.1666666666667
-WARNING:root:2020-03-20 21:02:37.366715 nothing change
-WARNING:root:-----------auto_scaling------------
-WARNING:root:valid_instances_id:['i-02d0217f544d223b6']
-WARNING:root:31.1666666666667
-WARNING:root:2020-03-20 21:02:48.803019 nothing change
-WARNING:root:-----------auto_scaling------------
-WARNING:root:valid_instances_id:['i-02d0217f544d223b6']
-WARNING:root:27.6666666666667
-WARNING:root:2020-03-20 21:03:00.221910 nothing change
-WARNING:root:-----------auto_scaling------------
-WARNING:root:valid_instances_id:['i-02d0217f544d223b6']
-WARNING:root:27.6666666666667
-WARNING:root:2020-03-20 21:03:12.225740 nothing change
-WARNING:root:-----------auto_scaling------------
-WARNING:root:valid_instances_id:['i-02d0217f544d223b6']
-WARNING:root:27.6666666666667
-WARNING:root:2020-03-20 21:03:23.674632 nothing change
-WARNING:root:-----------auto_scaling------------
-WARNING:root:valid_instances_id:['i-02d0217f544d223b6']
-WARNING:root:27.6666666666667
-WARNING:root:2020-03-20 21:03:35.091725 nothing change
-WARNING:root:-----------auto_scaling------------
-WARNING:root:valid_instances_id:['i-02d0217f544d223b6']
-WARNING:root:27.6666666666667
-WARNING:root:2020-03-20 21:03:46.577059 nothing change
-WARNING:root:-----------auto_scaling------------
-WARNING:root:valid_instances_id:['i-02d0217f544d223b6']
-WARNING:root:27.6666666666667
-WARNING:root:2020-03-20 21:03:58.026201 nothing change
-WARNING:root:-----------auto_scaling------------
-WARNING:root:valid_instances_id:['i-02d0217f544d223b6']
-WARNING:root:28.5245901639344
-WARNING:root:2020-03-20 21:04:09.494414 nothing change
-WARNING:root:-----------auto_scaling------------
-WARNING:root:valid_instances_id:['i-02d0217f544d223b6']
-WARNING:root:28.5245901639344
-WARNING:root:2020-03-20 21:04:20.935283 nothing change
-WARNING:root:-----------auto_scaling------------
-WARNING:root:valid_instances_id:['i-02d0217f544d223b6']
-WARNING:root:28.5245901639344
-WARNING:root:2020-03-20 21:04:32.317794 nothing change
-WARNING:root:-----------auto_scaling------------
-WARNING:root:valid_instances_id:['i-02d0217f544d223b6']
-WARNING:root:28.5245901639344
-WARNING:root:2020-03-20 21:04:43.754321 nothing change
-WARNING:root:-----------auto_scaling------------
-WARNING:root:valid_instances_id:['i-02d0217f544d223b6']
-WARNING:root:28.5245901639344
-WARNING:root:2020-03-20 21:04:55.180717 nothing change
-WARNING:root:-----------auto_scaling------------
-WARNING:root:valid_instances_id:['i-02d0217f544d223b6']
-WARNING:root:24.4067796610169
-WARNING:root:2020-03-20 21:05:06.601663 nothing change
-WARNING:root:-----------auto_scaling------------
-WARNING:root:valid_instances_id:['i-02d0217f544d223b6']
-WARNING:root:24.4067796610169
-WARNING:root:2020-03-20 21:05:18.026285 nothing change
-WARNING:root:-----------auto_scaling------------
-WARNING:root:valid_instances_id:['i-02d0217f544d223b6']
-WARNING:root:24.4067796610169
-WARNING:root:2020-03-20 21:05:29.492161 nothing change
-WARNING:root:-----------auto_scaling------------
-WARNING:root:valid_instances_id:['i-02d0217f544d223b6']
-WARNING:root:24.4067796610169
-WARNING:root:2020-03-20 21:05:40.855738 nothing change
-WARNING:root:-----------auto_scaling------------
-WARNING:root:valid_instances_id:['i-02d0217f544d223b6']
-WARNING:root:24.4067796610169
-WARNING:root:2020-03-20 21:05:52.329743 nothing change
-WARNING:root:-----------auto_scaling------------
-WARNING:root:valid_instances_id:['i-02d0217f544d223b6']
-WARNING:root:0.169491525423743
-WARNING:root:2020-03-20 21:06:03.745718 shrink workers: [True, 'Success', []]
-WARNING:root:-----------auto_scaling------------
-WARNING:root:valid_instances_id:['i-02d0217f544d223b6']
-WARNING:root:0.169491525423743
-WARNING:root:2020-03-20 21:06:15.651832 shrink workers: [True, 'Success', []]
-WARNING:root:-----------auto_scaling------------
-WARNING:root:valid_instances_id:['i-02d0217f544d223b6']
-WARNING:root:0.169491525423743
-WARNING:root:2020-03-20 21:06:27.205921 shrink workers: [True, 'Success', []]
-WARNING:root:-----------auto_scaling------------
-WARNING:root:valid_instances_id:['i-02d0217f544d223b6']
-WARNING:root:0.169491525423743
-WARNING:root:2020-03-20 21:06:38.826391 shrink workers: [True, 'Success', []]
-WARNING:root:-----------auto_scaling------------
-WARNING:root:valid_instances_id:['i-02d0217f544d223b6']
-WARNING:root:0.169491525423743
-WARNING:root:2020-03-20 21:06:50.426614 shrink workers: [True, 'Success', []]
-WARNING:root:-----------auto_scaling------------
-WARNING:root:valid_instances_id:['i-02d0217f544d223b6']
-WARNING:root:0.98360655737704
-WARNING:root:2020-03-20 21:07:01.918251 shrink workers: [True, 'Success', []]
-WARNING:root:-----------auto_scaling------------
-WARNING:root:valid_instances_id:['i-02d0217f544d223b6']
-WARNING:root:0.98360655737704
-WARNING:root:2020-03-20 21:07:14.165896 shrink workers: [True, 'Success', []]
-WARNING:root:-----------auto_scaling------------
-WARNING:root:valid_instances_id:['i-02d0217f544d223b6']
-WARNING:root:0.98360655737704
-WARNING:root:2020-03-20 21:07:25.688067 shrink workers: [True, 'Success', []]
-WARNING:root:-----------auto_scaling------------
-WARNING:root:valid_instances_id:['i-02d0217f544d223b6']
-WARNING:root:0.98360655737704
-WARNING:root:2020-03-20 21:07:37.232044 shrink workers: [True, 'Success', []]
-WARNING:root:-----------auto_scaling------------
-WARNING:root:valid_instances_id:['i-02d0217f544d223b6']
-WARNING:root:0.98360655737704
-WARNING:root:2020-03-20 21:07:49.091818 shrink workers: [True, 'Success', []]
-WARNING:root:-----------auto_scaling------------
-WARNING:root:valid_instances_id:['i-02d0217f544d223b6']
-WARNING:root:45.1666666666667
-WARNING:root:2020-03-20 21:08:00.718305 grow workers: [200]
-WARNING:root:-----------auto_scaling------------
-WARNING:root:valid_instances_id:['i-0876ed106060edf71', 'i-02d0217f544d223b6']
-WARNING:root:29.91666666666665
-WARNING:root:2020-03-20 21:10:39.417292 nothing change
-WARNING:root:-----------auto_scaling------------
-WARNING:root:valid_instances_id:['i-0876ed106060edf71', 'i-02d0217f544d223b6']
-WARNING:root:29.91666666666665
-WARNING:root:2020-03-20 21:10:50.970759 nothing change
-WARNING:root:-----------auto_scaling------------
-WARNING:root:valid_instances_id:['i-0876ed106060edf71', 'i-02d0217f544d223b6']
-WARNING:root:29.344262295082
-WARNING:root:2020-03-20 21:11:02.558701 nothing change
-WARNING:root:-----------auto_scaling------------
-WARNING:root:valid_instances_id:['i-0876ed106060edf71', 'i-02d0217f544d223b6']
-WARNING:root:29.344262295082
-WARNING:root:2020-03-20 21:11:14.872120 nothing change
-WARNING:root:-----------auto_scaling------------
-WARNING:root:valid_instances_id:['i-0876ed106060edf71', 'i-02d0217f544d223b6']
-WARNING:root:29.344262295082
-WARNING:root:2020-03-20 21:11:26.444737 nothing change
-WARNING:root:-----------auto_scaling------------
-WARNING:root:valid_instances_id:['i-0876ed106060edf71', 'i-02d0217f544d223b6']
-WARNING:root:29.344262295082
-WARNING:root:2020-03-20 21:11:37.991793 nothing change
-WARNING:root:-----------auto_scaling------------
-WARNING:root:valid_instances_id:['i-0876ed106060edf71', 'i-02d0217f544d223b6']
-WARNING:root:29.344262295082
-WARNING:root:2020-03-20 21:11:49.518227 nothing change
-WARNING:root:-----------auto_scaling------------
-WARNING:root:valid_instances_id:['i-0876ed106060edf71', 'i-02d0217f544d223b6']
-WARNING:root:29.5
-WARNING:root:2020-03-20 21:12:01.110340 nothing change
-WARNING:root:-----------auto_scaling------------
-WARNING:root:valid_instances_id:['i-0876ed106060edf71', 'i-02d0217f544d223b6']
-WARNING:root:29.5
-WARNING:root:2020-03-20 21:12:12.959733 nothing change
-WARNING:root:-----------auto_scaling------------
-WARNING:root:valid_instances_id:['i-0876ed106060edf71', 'i-02d0217f544d223b6']
-WARNING:root:29.5
-WARNING:root:2020-03-20 21:12:24.775663 nothing change
-WARNING:root:-----------auto_scaling------------
-WARNING:root:valid_instances_id:['i-0876ed106060edf71', 'i-02d0217f544d223b6']
-WARNING:root:29.5
-WARNING:root:2020-03-20 21:12:36.392908 nothing change
-WARNING:root:-----------auto_scaling------------
-WARNING:root:valid_instances_id:['i-0876ed106060edf71', 'i-02d0217f544d223b6']
-WARNING:root:29.5
-WARNING:root:2020-03-20 21:12:48.024570 nothing change
-WARNING:root:-----------auto_scaling------------
-WARNING:root:valid_instances_id:['i-0876ed106060edf71', 'i-02d0217f544d223b6']
-WARNING:root:6.6101694915254
-WARNING:root:2020-03-20 21:12:59.590376 shrink workers: [True, 'Success', [[True, 'Worker was successfully unregistered']]]
-WARNING:root:-----------auto_scaling------------
-WARNING:root:valid_instances_id:['i-02d0217f544d223b6']
-WARNING:root:13.2203389830508
-WARNING:root:2020-03-20 21:13:12.492667 nothing change
-WARNING:root:-----------auto_scaling------------
-WARNING:root:valid_instances_id:['i-02d0217f544d223b6']
-WARNING:root:13.2203389830508
-WARNING:root:2020-03-20 21:13:23.925332 nothing change
-WARNING:root:-----------auto_scaling------------
-WARNING:root:valid_instances_id:['i-02d0217f544d223b6']
-WARNING:root:13.2203389830508
-WARNING:root:2020-03-20 21:13:35.394332 nothing change
-WARNING:root:-----------auto_scaling------------
-WARNING:root:valid_instances_id:['i-02d0217f544d223b6']
-WARNING:root:13.2203389830508
-WARNING:root:2020-03-20 21:13:46.806190 nothing change
-WARNING:root:-----------auto_scaling------------
-WARNING:root:valid_instances_id:['i-02d0217f544d223b6']
-WARNING:root:13.2203389830508
-WARNING:root:2020-03-20 21:13:58.239380 nothing change
-WARNING:root:-----------auto_scaling------------
-WARNING:root:valid_instances_id:['i-02d0217f544d223b6']
-WARNING:root:3.83333333333335
-WARNING:root:2020-03-20 21:14:09.681963 shrink workers: [True, 'Success', []]
-WARNING:root:-----------auto_scaling------------
-WARNING:root:valid_instances_id:['i-02d0217f544d223b6']
-WARNING:root:3.83333333333335
-WARNING:root:2020-03-20 21:14:21.219709 shrink workers: [True, 'Success', []]
-WARNING:root:-----------auto_scaling------------
-WARNING:root:valid_instances_id:['i-02d0217f544d223b6']
-WARNING:root:3.83333333333335
-WARNING:root:2020-03-20 21:14:32.794571 shrink workers: [True, 'Success', []]
-WARNING:root:-----------auto_scaling------------
-WARNING:root:valid_instances_id:['i-02d0217f544d223b6']
-WARNING:root:3.83333333333335
-WARNING:root:2020-03-20 21:14:44.309984 shrink workers: [True, 'Success', []]
-WARNING:root:-----------auto_scaling------------
-WARNING:root:valid_instances_id:['i-02d0217f544d223b6']
-WARNING:root:3.83333333333335
-WARNING:root:2020-03-20 21:14:55.913367 shrink workers: [True, 'Success', []]
-WARNING:root:-----------auto_scaling------------
-WARNING:root:valid_instances_id:['i-02d0217f544d223b6']
-WARNING:root:53.5
-WARNING:root:2020-03-20 21:15:07.487033 grow workers: [200]
-WARNING:root:-----------auto_scaling------------
-WARNING:root:valid_instances_id:['i-02d0217f544d223b6', 'i-0e214a957c2e7ebf2']
-WARNING:root:26.75
-WARNING:root:2020-03-20 21:15:47.074759 nothing change
-WARNING:root:-----------auto_scaling------------
-WARNING:root:valid_instances_id:['i-02d0217f544d223b6', 'i-0e214a957c2e7ebf2']
-WARNING:root:26.75
-WARNING:root:2020-03-20 21:15:58.678361 nothing change
-WARNING:root:-----------auto_scaling------------
-WARNING:root:valid_instances_id:['i-02d0217f544d223b6', 'i-0e214a957c2e7ebf2', 'i-0f3c7049642eb39c4']
-WARNING:root:20.508474576271166
-WARNING:root:2020-03-20 21:16:10.235630 nothing change
-WARNING:root:-----------auto_scaling------------
-WARNING:root:valid_instances_id:['i-02d0217f544d223b6', 'i-0e214a957c2e7ebf2', 'i-0f3c7049642eb39c4']
-WARNING:root:20.508474576271166
-WARNING:root:2020-03-20 21:16:21.939387 nothing change
-WARNING:root:-----------auto_scaling------------
-WARNING:root:valid_instances_id:['i-02d0217f544d223b6', 'i-0e214a957c2e7ebf2', 'i-0726cc0b6fa8729c5', 'i-0f3c7049642eb39c4']
-WARNING:root:15.381355932203375
-WARNING:root:2020-03-20 21:16:33.663195 nothing change
+WARNING:root:valid_instances_id:[]
+WARNING:root:start:2020-03-22 13:33:28.944014-04:00
+WARNING:root:start:2020-03-22 13:34:28.944014-04:00
+WARNING:root:-1
+WARNING:root:2020-03-22 17:34:28.874841 no workers in the pool
+WARNING:root:-----------auto_scaling------------
+WARNING:root:valid_instances_id:['i-0d50b67dfcee0d857', 'i-082f546bd8e669d2e']
+WARNING:root:start:2020-03-22 13:34:29.221881-04:00
+WARNING:root:start:2020-03-22 13:35:29.221881-04:00
+WARNING:root:[]
+WARNING:root:[]
+WARNING:root:0.0
+WARNING:root:2020-03-22 17:35:29.165833 shrink workers: [True, 'Success', [[True, 'Worker was successfully unregistered']]]
+WARNING:root:-----------auto_scaling------------
+WARNING:root:valid_instances_id:['i-082f546bd8e669d2e']
+WARNING:root:start:2020-03-22 13:35:29.856431-04:00
+WARNING:root:start:2020-03-22 13:36:29.856431-04:00
+WARNING:root:[]
+WARNING:root:0.0
+WARNING:root:2020-03-22 17:36:29.812743 shrink workers: [True, 'Success', []]
+WARNING:root:-----------auto_scaling------------
+WARNING:root:valid_instances_id:['i-082f546bd8e669d2e']
+WARNING:root:start:2020-03-22 13:36:30.035719-04:00
+WARNING:root:start:2020-03-22 13:37:30.035719-04:00
+WARNING:root:[[1584898560000, 16.1666666666667]]
+WARNING:root:16.1666666666667
+WARNING:root:2020-03-22 17:37:29.986556 nothing change
+WARNING:root:-----------auto_scaling------------
+WARNING:root:valid_instances_id:['i-01fc8fcde74fb4e08', 'i-0513885dfd50480e6', 'i-082f546bd8e669d2e']
+WARNING:root:start:2020-03-22 13:37:30.198083-04:00
+WARNING:root:start:2020-03-22 13:38:30.198083-04:00
+WARNING:root:[]
+WARNING:root:[]
+WARNING:root:[[1584898620000, 0.327868852459021]]
+WARNING:root:0.10928961748634032
+WARNING:root:2020-03-22 17:38:30.149406 shrink workers: [True, 'Success', [[True, 'Worker was successfully unregistered']]]
+WARNING:root:-----------auto_scaling------------
+WARNING:root:valid_instances_id:['i-0513885dfd50480e6', 'i-082f546bd8e669d2e']
+WARNING:root:start:2020-03-22 13:38:30.809223-04:00
+WARNING:root:start:2020-03-22 13:39:30.809223-04:00
+WARNING:root:[]
+WARNING:root:[[1584898680000, 0.172413793103438]]
+WARNING:root:0.086206896551719
+WARNING:root:2020-03-22 17:39:30.757851 shrink workers: [True, 'Success', [[True, 'Worker was successfully unregistered']]]
+WARNING:root:-----------auto_scaling------------
+WARNING:root:valid_instances_id:['i-082f546bd8e669d2e']
+WARNING:root:start:2020-03-22 13:39:31.400005-04:00
+WARNING:root:start:2020-03-22 13:40:31.400005-04:00
+WARNING:root:[[1584898740000, 0.322580645161295]]
+WARNING:root:0.322580645161295
+WARNING:root:2020-03-22 17:40:31.339878 shrink workers: [True, 'Success', []]
+WARNING:root:-----------auto_scaling------------
+WARNING:root:valid_instances_id:['i-082f546bd8e669d2e']
+WARNING:root:start:2020-03-22 13:40:31.595515-04:00
+WARNING:root:start:2020-03-22 13:41:31.595515-04:00
+WARNING:root:[[1584898800000, 0.169491525423731]]
+WARNING:root:0.169491525423731
+WARNING:root:2020-03-22 17:41:31.544934 shrink workers: [True, 'Success', []]
+WARNING:root:-----------auto_scaling------------
+WARNING:root:valid_instances_id:['i-082f546bd8e669d2e']
+WARNING:root:start:2020-03-22 13:41:31.780053-04:00
+WARNING:root:start:2020-03-22 13:42:31.780053-04:00
+WARNING:root:[[1584898860000, 0.166666666666669]]
+WARNING:root:0.166666666666669
+WARNING:root:2020-03-22 17:42:31.731308 shrink workers: [True, 'Success', []]
+WARNING:root:-----------auto_scaling------------
+WARNING:root:valid_instances_id:['i-082f546bd8e669d2e']
+WARNING:root:start:2020-03-22 13:42:31.962511-04:00
+WARNING:root:start:2020-03-22 13:43:31.962511-04:00
+WARNING:root:[[1584898920000, 8.33333333333333]]
+WARNING:root:8.33333333333333
+WARNING:root:2020-03-22 17:43:31.913398 nothing change
+WARNING:root:-----------auto_scaling------------
+WARNING:root:valid_instances_id:['i-082f546bd8e669d2e']
+WARNING:root:start:2020-03-22 13:43:32.128193-04:00
+WARNING:root:start:2020-03-22 13:44:32.128193-04:00
+WARNING:root:[[1584898980000, 59.672131147541]]
+WARNING:root:59.672131147541
+WARNING:root:2020-03-22 17:44:32.073938 grow workers: [200]
+WARNING:root:-----------auto_scaling------------
+WARNING:root:valid_instances_id:['i-0513885dfd50480e6', 'i-082f546bd8e669d2e']
+WARNING:root:start:2020-03-22 13:44:54.582384-04:00
+WARNING:root:start:2020-03-22 13:45:54.582384-04:00
+WARNING:root:[]
+WARNING:root:[[1584899040000, 0.172413793103463]]
+WARNING:root:0.0862068965517315
+WARNING:root:2020-03-22 17:45:54.532340 shrink workers: [True, 'Success', [[True, 'Worker was successfully unregistered']]]
+WARNING:root:-----------auto_scaling------------
+WARNING:root:valid_instances_id:['i-082f546bd8e669d2e']
+WARNING:root:start:2020-03-22 13:45:55.279495-04:00
+WARNING:root:start:2020-03-22 13:46:55.279495-04:00
+WARNING:root:[[1584899100000, 0.49180327868852]]
+WARNING:root:0.49180327868852
+WARNING:root:2020-03-22 17:46:55.151493 shrink workers: [True, 'Success', []]
+WARNING:root:-----------auto_scaling------------
+WARNING:root:valid_instances_id:['i-082f546bd8e669d2e']
+WARNING:root:start:2020-03-22 13:46:55.467996-04:00
+WARNING:root:start:2020-03-22 13:47:55.467996-04:00
+WARNING:root:[[1584899160000, 1.16666666666667]]
+WARNING:root:1.16666666666667
+WARNING:root:2020-03-22 17:47:55.407462 shrink workers: [True, 'Success', []]
+WARNING:root:-----------auto_scaling------------
+WARNING:root:valid_instances_id:['i-082f546bd8e669d2e']
+WARNING:root:start:2020-03-22 13:47:55.666805-04:00
+WARNING:root:start:2020-03-22 13:48:55.666805-04:00
+WARNING:root:[[1584899220000, 1.31147540983606]]
+WARNING:root:1.31147540983606
+WARNING:root:2020-03-22 17:48:55.611293 shrink workers: [True, 'Success', []]
+WARNING:root:-----------auto_scaling------------
+WARNING:root:valid_instances_id:['i-082f546bd8e669d2e']
+WARNING:root:start:2020-03-22 13:48:55.862836-04:00
+WARNING:root:start:2020-03-22 13:49:55.862836-04:00
+WARNING:root:[[1584899280000, 1.16666666666667]]
+WARNING:root:1.16666666666667
+WARNING:root:2020-03-22 17:49:55.800166 shrink workers: [True, 'Success', []]
+WARNING:root:-----------auto_scaling------------
+WARNING:root:valid_instances_id:['i-082f546bd8e669d2e']
+WARNING:root:start:2020-03-22 13:49:56.047729-04:00
+WARNING:root:start:2020-03-22 13:50:56.047729-04:00
+WARNING:root:[[1584899340000, 1.18644067796611]]
+WARNING:root:1.18644067796611
+WARNING:root:2020-03-22 17:50:55.992747 shrink workers: [True, 'Success', []]
+WARNING:root:-----------auto_scaling------------
+WARNING:root:valid_instances_id:['i-082f546bd8e669d2e']
+WARNING:root:start:2020-03-22 13:50:56.225862-04:00
+WARNING:root:start:2020-03-22 13:51:56.225862-04:00
+WARNING:root:[[1584899400000, 1.33333333333333]]
+WARNING:root:1.33333333333333
+WARNING:root:2020-03-22 17:51:56.179098 shrink workers: [True, 'Success', []]
