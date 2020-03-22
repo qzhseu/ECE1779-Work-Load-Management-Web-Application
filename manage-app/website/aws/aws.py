@@ -244,7 +244,11 @@ class AwsClient:
                     if (tag==False):
                         #after successful stopping, try to terminate instance when tag is false
                         terminate_instance_status = -1
+<<<<<<< HEAD
                         terminate_instance_response = self.ec2.terminate_instances(InstanceIds=[unregister_instance_id])
+=======
+                        terminate_instance_response = self.ec2.stop_instances(InstanceIds=[unregister_instance_id])
+>>>>>>> ce71bcec3eedf60f08d347f2a2bd50e63a522144
                         if terminate_instance_response and 'ResponseMetadata' in terminate_instance_response and \
                                 'HTTPStatusCode' in terminate_instance_response['ResponseMetadata']:
                             terminate_instance_status = stop_instance_response['ResponseMetadata']['HTTPStatusCode']

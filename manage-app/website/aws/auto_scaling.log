@@ -1,0 +1,182 @@
+WARNING:root:-----------auto_scaling------------
+WARNING:root:valid_instances_id:['i-0876ed106060edf71']
+WARNING:root:0.163934426229508
+WARNING:root:2020-03-20 23:33:31.965133 shrink workers: [True, 'Success', []]
+WARNING:root:-----------auto_scaling------------
+WARNING:root:valid_instances_id:['i-0876ed106060edf71']
+WARNING:root:0.169491525423728
+WARNING:root:2020-03-20 23:34:35.731417 shrink workers: [True, 'Success', []]
+WARNING:root:-----------auto_scaling------------
+WARNING:root:valid_instances_id:['i-0876ed106060edf71']
+WARNING:root:0.166666666666666
+WARNING:root:2020-03-20 23:35:37.404532 shrink workers: [True, 'Success', []]
+WARNING:root:-----------auto_scaling------------
+WARNING:root:valid_instances_id:['i-0876ed106060edf71']
+WARNING:root:16.8852459016393
+WARNING:root:2020-03-20 23:36:39.064866 nothing change
+WARNING:root:-----------auto_scaling------------
+WARNING:root:valid_instances_id:['i-0876ed106060edf71']
+WARNING:root:61.3559322033898
+WARNING:root:2020-03-20 23:37:40.584515 grow workers: [200]
+WARNING:root:-----------auto_scaling------------
+WARNING:root:valid_instances_id:['i-0876ed106060edf71', 'i-076375d0ff3c065e5']
+WARNING:root:29.83050847457625
+WARNING:root:2020-03-20 23:39:11.274963 nothing change
+WARNING:root:-----------auto_scaling------------
+WARNING:root:valid_instances_id:['i-0876ed106060edf71', 'i-076375d0ff3c065e5']
+WARNING:root:25.91666666666665
+WARNING:root:2020-03-20 23:40:12.941873 nothing change
+WARNING:root:-----------auto_scaling------------
+WARNING:root:valid_instances_id:['i-0876ed106060edf71', 'i-076375d0ff3c065e5']
+WARNING:root:30.425118088357873
+WARNING:root:2020-03-20 23:41:14.578964 nothing change
+WARNING:root:-----------auto_scaling------------
+WARNING:root:valid_instances_id:['i-0876ed106060edf71', 'i-076375d0ff3c065e5']
+WARNING:root:30.25
+WARNING:root:2020-03-20 23:42:16.259202 nothing change
+WARNING:root:-----------auto_scaling------------
+WARNING:root:valid_instances_id:['i-0876ed106060edf71', 'i-076375d0ff3c065e5']
+WARNING:root:29.424840233398175
+WARNING:root:2020-03-20 23:43:19.022080 nothing change
+WARNING:root:-----------auto_scaling------------
+WARNING:root:valid_instances_id:['i-0876ed106060edf71', 'i-076375d0ff3c065e5']
+WARNING:root:29.957627118644076
+WARNING:root:2020-03-20 23:44:20.767268 nothing change
+WARNING:root:-----------auto_scaling------------
+WARNING:root:valid_instances_id:['i-0876ed106060edf71', 'i-076375d0ff3c065e5']
+WARNING:root:30.255626562934175
+WARNING:root:2020-03-20 23:45:22.442623 nothing change
+WARNING:root:-----------auto_scaling------------
+WARNING:root:valid_instances_id:['i-0876ed106060edf71', 'i-076375d0ff3c065e5']
+WARNING:root:22.66666666666663
+WARNING:root:2020-03-20 23:46:24.179369 nothing change
+WARNING:root:-----------auto_scaling------------
+WARNING:root:valid_instances_id:['i-0876ed106060edf71', 'i-076375d0ff3c065e5']
+WARNING:root:0.8460451977401134
+WARNING:root:2020-03-20 23:47:25.818955 shrink workers: [True, 'Success', [[True, 'Worker was successfully unregistered']]]
+WARNING:root:-----------auto_scaling------------
+WARNING:root:valid_instances_id:['i-076375d0ff3c065e5']
+WARNING:root:0.338983050847487
+WARNING:root:2020-03-20 23:48:28.764834 shrink workers: [True, 'Success', []]
+WARNING:root:-----------auto_scaling------------
+WARNING:root:valid_instances_id:['i-076375d0ff3c065e5']
+WARNING:root:0.163934426229499
+WARNING:root:2020-03-20 23:49:30.408129 shrink workers: [True, 'Success', []]
+WARNING:root:-----------auto_scaling------------
+WARNING:root:valid_instances_id:['i-076375d0ff3c065e5']
+WARNING:root:2.66666666666666
+WARNING:root:2020-03-20 23:50:32.083236 shrink workers: [True, 'Success', []]
+WARNING:root:-----------auto_scaling------------
+WARNING:root:valid_instances_id:['i-076375d0ff3c065e5']
+WARNING:root:38.0
+WARNING:root:2020-03-20 23:51:33.695618 nothing change
+WARNING:root:-----------auto_scaling------------
+WARNING:root:valid_instances_id:['i-076375d0ff3c065e5']
+WARNING:root:61.3333333333333
+WARNING:root:2020-03-20 23:52:35.152272 grow workers: [200]
+WARNING:root:-----------auto_scaling------------
+WARNING:root:valid_instances_id:['i-076375d0ff3c065e5', 'i-02d0217f544d223b6']
+WARNING:root:30.327868852459
+WARNING:root:2020-03-20 23:57:29.056745 nothing change
+WARNING:root:-----------auto_scaling------------
+WARNING:root:valid_instances_id:['i-076375d0ff3c065e5', 'i-02d0217f544d223b6']
+WARNING:root:31.35169491525425
+WARNING:root:2020-03-20 23:58:30.553827 nothing change
+WARNING:root:-----------auto_scaling------------
+WARNING:root:valid_instances_id:['i-076375d0ff3c065e5', 'i-02d0217f544d223b6']
+WARNING:root:30.41393442622945
+WARNING:root:2020-03-20 23:59:32.004614 nothing change
+WARNING:root:-----------auto_scaling------------
+WARNING:root:valid_instances_id:['i-076375d0ff3c065e5', 'i-02d0217f544d223b6']
+WARNING:root:34.06638418079098
+WARNING:root:2020-03-21 00:00:33.394317 nothing change
+WARNING:root:-----------auto_scaling------------
+WARNING:root:valid_instances_id:['i-076375d0ff3c065e5', 'i-02d0217f544d223b6']
+WARNING:root:19.658192090395467
+WARNING:root:2020-03-21 00:01:34.965460 nothing change
+WARNING:root:-----------auto_scaling------------
+WARNING:root:valid_instances_id:['i-076375d0ff3c065e5', 'i-02d0217f544d223b6']
+WARNING:root:7.624316939890733
+WARNING:root:2020-03-21 00:02:36.405757 nothing change
+WARNING:root:-----------auto_scaling------------
+WARNING:root:valid_instances_id:['i-076375d0ff3c065e5', 'i-02d0217f544d223b6']
+WARNING:root:7.416666666666633
+WARNING:root:2020-03-21 00:03:37.934632 nothing change
+WARNING:root:-----------auto_scaling------------
+WARNING:root:valid_instances_id:['i-076375d0ff3c065e5', 'i-02d0217f544d223b6']
+WARNING:root:7.460382513661183
+WARNING:root:2020-03-21 00:04:38.975637 nothing change
+WARNING:root:-----------auto_scaling------------
+WARNING:root:valid_instances_id:['i-076375d0ff3c065e5', 'i-02d0217f544d223b6']
+WARNING:root:11.819949986107215
+WARNING:root:2020-03-21 00:05:39.888010 nothing change
+WARNING:root:-----------auto_scaling------------
+WARNING:root:valid_instances_id:['i-076375d0ff3c065e5', 'i-02d0217f544d223b6']
+WARNING:root:65.3954802259887
+WARNING:root:2020-03-21 00:06:40.991238 grow workers: [200, 200]
+WARNING:root:-----------auto_scaling------------
+WARNING:root:valid_instances_id:['i-0876ed106060edf71', 'i-02d0217f544d223b6', 'i-0e214a957c2e7ebf2', 'i-076375d0ff3c065e5']
+WARNING:root:31.830369547096375
+WARNING:root:2020-03-21 00:08:30.287371 nothing change
+WARNING:root:-----------auto_scaling------------
+WARNING:root:valid_instances_id:['i-0876ed106060edf71', 'i-02d0217f544d223b6', 'i-0e214a957c2e7ebf2', 'i-076375d0ff3c065e5']
+WARNING:root:49.08827683615817
+WARNING:root:2020-03-21 00:09:31.180363 grow workers: [200, 200, 200, 200]
+WARNING:root:-----------auto_scaling------------
+WARNING:root:valid_instances_id:['i-0876ed106060edf71', 'i-0e214a957c2e7ebf2', 'i-0a16cc08e7e6582ac', 'i-076375d0ff3c065e5', 'i-0726cc0b6fa8729c5', 'i-0d83aa92efa7ce452', 'i-02d0217f544d223b6']
+WARNING:root:2.3294433638973886
+WARNING:root:2020-03-21 00:12:18.743809 shrink workers: [True, 'Success', [[True, 'Worker was successfully unregistered'], [True, 'Worker was successfully unregistered'], [True, 'Worker was successfully unregistered']]]
+WARNING:root:-----------auto_scaling------------
+WARNING:root:valid_instances_id:['i-0d83aa92efa7ce452', 'i-02d0217f544d223b6', 'i-076375d0ff3c065e5', 'i-0726cc0b6fa8729c5']
+7
+7
+6
+5
+4
+3
+2
+1
+Traceback (most recent call last):
+  File "/Users/qzh/Documents/UT/1779 Cloud computing/ece1779-a2-master/manage-app/myvenv/lib/python3.7/site-packages/sqlalchemy/engine/base.py", line 755, in _commit_impl
+    self.engine.dialect.do_commit(self.connection)
+  File "/Users/qzh/Documents/UT/1779 Cloud computing/ece1779-a2-master/manage-app/myvenv/lib/python3.7/site-packages/sqlalchemy/dialects/mysql/base.py", line 2306, in do_commit
+    dbapi_connection.commit()
+MySQLdb._exceptions.OperationalError: (2013, 'Lost connection to MySQL server during query')
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "auto_scaling.py", line 81, in <module>
+    schedule.run_pending()
+  File "/Users/qzh/Documents/UT/1779 Cloud computing/ece1779-a2-master/manage-app/myvenv/lib/python3.7/site-packages/schedule/__init__.py", line 563, in run_pending
+    default_scheduler.run_pending()
+  File "/Users/qzh/Documents/UT/1779 Cloud computing/ece1779-a2-master/manage-app/myvenv/lib/python3.7/site-packages/schedule/__init__.py", line 94, in run_pending
+    self._run_job(job)
+  File "/Users/qzh/Documents/UT/1779 Cloud computing/ece1779-a2-master/manage-app/myvenv/lib/python3.7/site-packages/schedule/__init__.py", line 147, in _run_job
+    ret = job.run()
+  File "/Users/qzh/Documents/UT/1779 Cloud computing/ece1779-a2-master/manage-app/myvenv/lib/python3.7/site-packages/schedule/__init__.py", line 466, in run
+    ret = self.job_func()
+  File "auto_scaling.py", line 42, in auto_scaling
+    db.session.commit()
+  File "/Users/qzh/Documents/UT/1779 Cloud computing/ece1779-a2-master/manage-app/myvenv/lib/python3.7/site-packages/sqlalchemy/orm/scoping.py", line 162, in do
+    return getattr(self.registry(), name)(*args, **kwargs)
+  File "/Users/qzh/Documents/UT/1779 Cloud computing/ece1779-a2-master/manage-app/myvenv/lib/python3.7/site-packages/sqlalchemy/orm/session.py", line 1036, in commit
+    self.transaction.commit()
+  File "/Users/qzh/Documents/UT/1779 Cloud computing/ece1779-a2-master/manage-app/myvenv/lib/python3.7/site-packages/sqlalchemy/orm/session.py", line 507, in commit
+    t[1].commit()
+  File "/Users/qzh/Documents/UT/1779 Cloud computing/ece1779-a2-master/manage-app/myvenv/lib/python3.7/site-packages/sqlalchemy/engine/base.py", line 1736, in commit
+    self._do_commit()
+  File "/Users/qzh/Documents/UT/1779 Cloud computing/ece1779-a2-master/manage-app/myvenv/lib/python3.7/site-packages/sqlalchemy/engine/base.py", line 1767, in _do_commit
+    self.connection._commit_impl()
+  File "/Users/qzh/Documents/UT/1779 Cloud computing/ece1779-a2-master/manage-app/myvenv/lib/python3.7/site-packages/sqlalchemy/engine/base.py", line 757, in _commit_impl
+    self._handle_dbapi_exception(e, None, None, None, None)
+  File "/Users/qzh/Documents/UT/1779 Cloud computing/ece1779-a2-master/manage-app/myvenv/lib/python3.7/site-packages/sqlalchemy/engine/base.py", line 1482, in _handle_dbapi_exception
+    sqlalchemy_exception, with_traceback=exc_info[2], from_=e
+  File "/Users/qzh/Documents/UT/1779 Cloud computing/ece1779-a2-master/manage-app/myvenv/lib/python3.7/site-packages/sqlalchemy/util/compat.py", line 178, in raise_
+    raise exception
+  File "/Users/qzh/Documents/UT/1779 Cloud computing/ece1779-a2-master/manage-app/myvenv/lib/python3.7/site-packages/sqlalchemy/engine/base.py", line 755, in _commit_impl
+    self.engine.dialect.do_commit(self.connection)
+  File "/Users/qzh/Documents/UT/1779 Cloud computing/ece1779-a2-master/manage-app/myvenv/lib/python3.7/site-packages/sqlalchemy/dialects/mysql/base.py", line 2306, in do_commit
+    dbapi_connection.commit()
+sqlalchemy.exc.OperationalError: (MySQLdb._exceptions.OperationalError) (2013, 'Lost connection to MySQL server during query')
+(Background on this error at: http://sqlalche.me/e/e3q8)
